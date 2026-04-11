@@ -8,19 +8,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* container */
 .carousel-container {
   margin-top: 8vh;
   position: relative;
   width: 420px;
 }
 
-/* hide radios */
 input {
   display: none;
 }
 
-/* carousel box */
 .carousel {
   position: relative;
   width: 420px;
@@ -30,7 +27,6 @@ input {
   box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
-/* slides */
 .slide {
   position: absolute;
   width: 100%;
@@ -47,7 +43,6 @@ input {
   display: block;
 }
 
-/* show active slide */
 #s1:checked ~ .carousel .one,
 #s2:checked ~ .carousel .two,
 #s3:checked ~ .carousel .three {
@@ -55,7 +50,6 @@ input {
   transform: scale(1);
 }
 
-/* arrows */
 .nav {
   position: absolute;
   top: 50%;
@@ -82,7 +76,6 @@ input {
   background: rgba(255,255,255,0.4);
 }
 
-/* dots */
 .dots {
   text-align: center;
   margin-top: 12px;
@@ -102,4 +95,36 @@ input {
 #s2:checked ~ .dots label[for="s2"],
 #s3:checked ~ .dots label[for="s3"] {
   background: white;
+}
+
+.nav-s1, .nav-s2, .nav-s3 {
+  display: none;
+}
+
+
+#s1:checked ~ .carousel .nav-s1 {
+  display: block;
+}
+
+#s2:checked ~ .carousel .nav-s2 {
+  display: block;
+}
+
+#s3:checked ~ .carousel .nav-s3 {
+  display: block;
+}
+
+.nav label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: all;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
 }
