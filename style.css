@@ -10,6 +10,29 @@ body{
 background-color: lightblue;
 }
 
+.carousel {
+  display: flex;
+  overflow-x: auto;  
+  gap: 15px;
+  padding: 10px;
+  scroll-snap-type: x mandatory; 
+}
+
+.card {
+  min-width: 150px;   
+  flex: 0 0 auto;     
+  text-align: center;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: black;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 
 
