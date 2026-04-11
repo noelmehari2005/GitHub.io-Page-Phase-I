@@ -10,30 +10,30 @@ body {
 
 .carousel-container {
   margin-top: 8vh;
-  position: relative;
   width: 420px;
-}
-
-input {
-  display: none;
 }
 
 .carousel {
-  position: relative;
+  display: flex;
   width: 420px;
   height: 280px;
-  overflow: hidden;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
 .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transform: scale(1.05);
-  transition: all 0.5s ease;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  text-decoration: none;
 }
 
 .slide img {
@@ -43,88 +43,4 @@ input {
   display: block;
 }
 
-#s1:checked ~ .carousel .one,
-#s2:checked ~ .carousel .two,
-#s3:checked ~ .carousel .three {
-  opacity: 1;
-  transform: scale(1);
-}
 
-.nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.nav label {
-  pointer-events: all;
-  cursor: pointer;
-  background: rgba(255,255,255,0.2);
-  color: white;
-  padding: 10px 14px;
-  border-radius: 50%;
-  transition: 0.3s;
-  backdrop-filter: blur(5px);
-  user-select: none;
-}
-
-.nav label:hover {
-  background: rgba(255,255,255,0.4);
-}
-
-.dots {
-  text-align: center;
-  margin-top: 12px;
-}
-
-.dots label {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 5px;
-  background: rgba(255,255,255,0.4);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#s1:checked ~ .dots label[for="s1"],
-#s2:checked ~ .dots label[for="s2"],
-#s3:checked ~ .dots label[for="s3"] {
-  background: white;
-}
-
-.nav-s1, .nav-s2, .nav-s3 {
-  display: none;
-}
-
-
-#s1:checked ~ .carousel .nav-s1 {
-  display: block;
-}
-
-#s2:checked ~ .carousel .nav-s2 {
-  display: block;
-}
-
-#s3:checked ~ .carousel .nav-s3 {
-  display: block;
-}
-
-.nav label {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: all;
-}
-
-.left {
-  left: 10px;
-}
-
-.right {
-  right: 10px;
-}
