@@ -34,6 +34,25 @@ background-color: lightblue;
   border-radius: 10px;
 }
 
+.slide {
+  flex: 0 0 100%;     
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.slide img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
 
 
 </style>
