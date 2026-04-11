@@ -10,34 +10,42 @@ My First Website
 </head>
 <body>
   
-  <div class="carousel-wrapper">
 
-  <button class="arrow left">&#10094;</button>
+<div class="carousel-container">
 
-  <div class= "carousel">
+  <input type="radio" name="slider" id="s1" checked>
+  <input type="radio" name="slider" id="s2">
+  <input type="radio" name="slider" id="s3">
 
-    <a href="Product1" class="slide">
-      <img src="https://media.istockphoto.com/id/2061716709/photo/grilled-rib-burger.webp" alt= "Img of Burger">
-      <p>Burger</p>
+  <div class="carousel">
+
+    <a href="https://example.com/product1" class="slide one">
+      <img src="https://media.istockphoto.com/id/2061716709/photo/grilled-rib-burger.webp" alt="Burger">
     </a>
 
-    <a href="Product2" class="slide">
-      <img src="https://media.istockphoto.com/id/2149684665/photo/patriotic-american-memorial-day-hot-dogs.jpg" alt= "Img of Hotdog">
-      <p>Hotdog</p>
+    <a href="https://example.com/product2" class="slide two">
+      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Pizza">
     </a>
 
-    <a href="Product3" class="slide">
-      <img src= "https://media.istockphoto.com/id/171576027/photo/three-foot-long-subs.webp" alt= "Img of Sandwich">
-      <p>Sandwich</p>
+    <a href="https://example.com/product3" class="slide three">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Pasta">
     </a>
+
+    <div class="nav">
+      <label for="s3">❮</label>
+      <label for="s2">❯</label>
+    </div>
 
   </div>
 
-  <button class="arrow right">&#10095;</button>
+  <div class="dots">
+    <label for="s1"></label>
+    <label for="s2"></label>
+    <label for="s3"></label>
+  </div>
 
 </div>
 
-<div class="dots"></div>
   
 </body> 
 </html>
