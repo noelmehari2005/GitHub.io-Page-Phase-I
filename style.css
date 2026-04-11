@@ -43,4 +43,33 @@ body {
   display: block;
 }
 
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+}
+
+.slide:target .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
