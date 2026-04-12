@@ -143,8 +143,8 @@ body {
 
 .about-container {
   max-width: 800px;
-  background: white;
-  padding: 40px;
+  background: black;
+  padding: 70px;
   border-radius: 16px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.3);
 }
