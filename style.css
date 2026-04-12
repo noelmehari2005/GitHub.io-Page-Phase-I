@@ -8,6 +8,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
+
+
+
+
+
+
+
+
+
 .carousel-container {
   margin-top: 8vh;
   width: 420px;
@@ -57,11 +67,19 @@ body {
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
 }
 
+
+
+
+
+
+
+
+
+
 #menu-toggle {
   display: none;
 }
 
-/* hamburger icon */
 .hamburger {
   position: fixed;
   top: 20px;
@@ -78,7 +96,6 @@ body {
   z-index: 1000;
 }
 
-/* navbar hidden by default */
 .navbar {
   position: fixed;
   top: 70px;
@@ -99,7 +116,6 @@ body {
   transition: 0.3s ease;
 }
 
-/* show menu when checked */
 #menu-toggle:checked ~ .navbar {
   opacity: 1;
   transform: translateY(0);
@@ -117,4 +133,32 @@ body {
 
 .navbar a:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+.about-container {
+  max-width: 800px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+
+.about-container p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
 }
