@@ -18,10 +18,9 @@ h1{
 }
 
 p{
-
-  color: white;
-  font-size: 20px;
-  margin: 15px;
+  color: black;
+  font-size: 15px;
+  margin-top: 15px;
 
 }
 
@@ -35,7 +34,7 @@ p{
 
 
 .carousel-container {
-  margin-left: 16vh;
+  margin-left: 50vh;
   margin-top: 8vh;
   width: 420px;
 }
